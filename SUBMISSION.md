@@ -1,15 +1,20 @@
 # Instructions
 Daniel Pohanka  #1960300
 
-# Travis CI [50 pts]
+Docker
+- Dockerfile. Please provide a link to this file rather than a screen capture. [Dockerfile](Dockerfile) 
+- The running docker instance as shown by a ps command. ![Docker instance](images/docker-instance.JPG)
+- Browser accessing the main page of the website from your local container. ![Docker local container browser](images/docker-browser-localcontainer.JPG)
 
-- Your Github account showing that is has been forked from the depaulcdm/springpetclinic repository ![Travis CI Screen Capture #1](figures/travis-ci-forked-repo.JPG)
-- Travis CI dashboard showing a successful first build. ![Travis CI Screen Capture #2](figures/travis-ci-build-1.JPG)
-- The section of the POM file showing the coordinates after changing them. ![Travis CI Screen Capture #3](figures/travis-ci-pom-coordinates-1.JPG)
-- Travis CI dashboard showing a successful build after the change of the group ID. ![Travis CI Screen Capture #4](figures/travis-ci-build-2.JPG)
-- The section of the POM file showing the coordinates after commenting them out. ![Travis CI Screen Capture #5](figures/travis-ci-pom-coordinates-commented-out.JPG)
-- Travis CI dashboard showing the unsuccessful build after the breaking change. ![Travis CI Screen Capture #6](figures/travis-ci-build-3.JPG)
-- Github repository with the readme.md file selected showing the build failed status after the Travis CI build fails. ![Travis CI Screen Capture #7](figures/travis-ci-git-readme-build-3.JPG)
-- The section of the POM file showing the coordinates after you’ve fixed them. ![Travis CI Screen Capture #8](figures/travis-ci-pom-coordinates-uncommented.JPG)
-- Travis CI dashboard showing the successful build after the breaking change has been fixed. ![Travis CI Screen Capture #9](figures/travis-ci-build-4.JPG)
-- Github repository with the readme.md file selected showing the build success status after the Travis CI build has recovered. ![Travis CI Screen Capture #10](figures/travis-ci-git-readme-build-4.JPG)
+
+DOCKER COMPOSE - MYSQL ONLY
+- The output from the docker-compose up command.
+- Browser accessing the “Veterinarians” page of the website from your local container when you run the application from the host system. ![Docker MYSQL local container browser](images/dockercomposemysql-browser.JPG)
+- A section of the stack trace generated when you attempt to run the application container that has been updated to use MySQL. ![Docker MYSQL exception](images/dockercomposemysql-exception.JPG)
+
+
+DOCKER COMPOSE - APP SERVER AND MYSQL
+- Updated docker-compose.yml file containing the application server, built from your local Dockerfile, and the existing MySQL configuration. Please provide a link to this file rather than a screen capture. [docker-compose](docker-compose.yml)
+- Updated application-mysql.properties file containing the URL change for the database server. Please provide a link to this file rather than a screen capture. [application-mysql.properties](src/main/resources/application-mysql.propertiesl)
+- The output from the docker-compose up command.
+- Browser accessing the “Veterinarians” page of the website from your local container. ![Docker APP browser](images/dockercomposeapp-browser.JPG)
