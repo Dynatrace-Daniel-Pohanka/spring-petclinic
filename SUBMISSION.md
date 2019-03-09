@@ -16,5 +16,5 @@ DOCKER COMPOSE - MYSQL ONLY
 DOCKER COMPOSE - APP SERVER AND MYSQL
 - Updated docker-compose.yml file containing the application server, built from your local Dockerfile, and the existing MySQL configuration. Please provide a link to this file rather than a screen capture. [docker-compose](docker-compose.yml)
 - Updated application-mysql.properties file containing the URL change for the database server. Please provide a link to this file rather than a screen capture. [application-mysql.properties](src/main/resources/application-mysql.properties)
-- The output from the docker-compose up command. [Docker APP docker-compose up](images/dockercomposeapp-up.JPG)
+- The output from the docker-compose up command. ![Docker APP docker-compose up](images/dockercomposeapp-up.JPG)
 - Browser accessing the “Veterinarians” page of the website from your local container. ![Docker APP browser](images/dockercomposeapp-browser.JPG)
